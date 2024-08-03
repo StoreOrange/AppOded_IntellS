@@ -1,0 +1,114 @@
+You’re running the REPL with outdated classes: Build module 'AppOded' and restart
+
+Kotlin IDE REPL support is experimental. It may be slow or unstable. Please, report problems to https://youtrack.jetbrains.com/issues/KTIJ.
+Welcome to Kotlin version 1.9.24-release-822 (JRE 20.0.2+9-78)
+Type :help for help, :quit for quit
+
+val numberOfFish = 50
+ val numberOfPlants = 23
+ if (numberOfFish > numberOfPlants) {
+     println("Good ratio!")
+ } else {
+     println("Unhealthy ratio")
+ }
+Good ratio!
+
+val cantidadCuadernos = 20
+ val cantidadLibros= 30
+ if (cantidadCuadernos>cantidadLibros){
+     println("Menos Cuadernos")
+ } else {
+     println("Mas Libros")
+ }
+Mas Libros
+
+if (cantidadLibros == 0) {
+     println("Sin Existencias")
+ } else if (cantidadCuadernos < 40) {
+     println("Con Mas existencias")
+ } else {
+     println("Sin Existencias")
+ }
+Con Mas existencias
+
+when (cantidadLibros) {
+     0  -> println("No hay Libros")
+     in 1..40 -> println("Hay Libros")
+     else -> println("Son Muchos Libros")
+ }
+Hay Libros
+
+var cantidadLapiz = 10
+ cantidadLapiz?.dec().also { it: Int? ->
+     if (it != null) {
+         cantidadLapiz = it
+     }
+ }
+ 
+ 
+ 2*5
+res4: kotlin.Int = 10
+
+2*6
+res5: kotlin.Int = 12
+
+8-5
+res6: kotlin.Int = 3
+
+4/2
+res7: kotlin.Int = 2
+
+7-2
+res8: kotlin.Int = 5
+
+7/8.5
+res9: kotlin.Double = 0.8235294117647058
+
+8*9.50
+res10: kotlin.Double = 76.0
+
+val receta_ArrozyLeche = listOf("arroz", "leche", "canela")
+ println(receta_ArrozyLeche)
+[arroz, leche, canela]
+
+val receta_2 = arrayOf("arroz", "leche", "azucar")
+ println(java.util.Arrays.toString(receta_2))
+[arroz, leche, azucar]
+
+val numeross = intArrayOf(1,2,3,4,5)
+
+val numeross = intArrayOf(1,2,3,4,5)
+ println(numeross)
+[I@6773bab2
+
+val array = Array (5) { it * 2 }
+ println(java.util.Arrays.toString(array))
+[0, 2, 4, 6, 8]
+
+val array = Array (300) { it * 3 }
+ println(java.util.Arrays.toString(array))
+[0, 3, 6, 9, 12, 15, 18, 21, 24, 27, 30, 33, 36, 39, 42, 45, 48, 51, 54, 57, 60, 63, 66, 69, 72, 75, 78, 81, 84, 87, 90, 93, 96, 99, 102, 105, 108, 111, 114, 117, 120, 123, 126, 129, 132, 135, 138, 141, 144, 147, 150, 153, 156, 159, 162, 165, 168, 171, 174, 177, 180, 183, 186, 189, 192, 195, 198, 201, 204, 207, 210, 213, 216, 219, 222, 225, 228, 231, 234, 237, 240, 243, 246, 249, 252, 255, 258, 261, 264, 267, 270, 273, 276, 279, 282, 285, 288, 291, 294, 297, 300, 303, 306, 309, 312, 315, 318, 321, 324, 327, 330, 333, 336, 339, 342, 345, 348, 351, 354, 357, 360, 363, 366, 369, 372, 375, 378, 381, 384, 387, 390, 393, 396, 399, 402, 405, 408, 411, 414, 417, 420, 423, 426, 429, 432, 435, 438, 441, 444, 447, 450, 453, 456, 459, 462, 465, 468, 471, 474, 477, 480, 483, 486, 489, 492, 495, 498, 501, 504, 507, 510, 513, 516, 519, 522, 525, 528, 531, 534, 537, 540, 543, 546, 549, 552, 555, 558, 561, 564, 567, 570, 573, 576, 579, 582, 585, 588, 591, 594, 597, 600, 603, 606, 609, 612, 615, 618, 621, 624, 627, 630, 633, 636, 639, 642, 645, 648, 651, 654, 657, 660, 663, 666, 669, 672, 675, 678, 681, 684, 687, 690, 693, 696, 699, 702, 705, 708, 711, 714, 717, 720, 723, 726, 729, 732, 735, 738, 741, 744, 747, 750, 753, 756, 759, 762, 765, 768, 771, 774, 777, 780, 783, 786, 789, 792, 795, 798, 801, 804, 807, 810, 813, 816, 819, 822, 825, 828, 831, 834, 837, 840, 843, 846, 849, 852, 855, 858, 861, 864, 867, 870, 873, 876, 879, 882, 885, 888, 891, 894, 897]
+
+val recetas_3 = arrayOf("arroz", "azucar", "leche", "canela")
+ for (element in recetas_3) {
+     print(element + " ")
+ }
+arroz azucar leche canela 
+
+var azucar = 0
+ while (azucar < 50) {
+     azucar++
+ }
+ println("$azucar bubbles in the water\n")
+ 
+ do {
+     azucar--
+ } while (azucar > 50)
+ println("$azucar bubbles in the water\n")
+ 
+ repeat(2) {
+     println("listo")
+ }
+50 bubbles in the water
+49 bubbles in the water
+listolisto
