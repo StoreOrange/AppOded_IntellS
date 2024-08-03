@@ -13,3 +13,5 @@ fun randomDay() : String {
         "Friday", "Saturday", "Sunday")
     return week[Random().nextInt(week.size)]
 }
+
+
